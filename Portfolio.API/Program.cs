@@ -14,7 +14,7 @@ builder.Services.AddDbContext<PortfolioContext>(options =>
 
 builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 builder.Services.AddScoped<IPortfolioService, PortfolioService>();
-var bus = RabbitHutch.CreateBus("host=localhost");
+var bus = RabbitHutch.CreateBus("host=rabbitmq");
 builder.Services.AddSingleton(bus);
 
 builder.Services.AddHttpClient();
@@ -27,7 +27,7 @@ builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
 });
 
 var app = builder.Build();
-
+DbMgmt.MigrationInit(app);
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -37,6 +37,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllers();
 
