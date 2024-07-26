@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\Portfolio.Service.csproj": {}
+    "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj": {
+    "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj",
+        "projectUniqueName": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj",
         "projectName": "Portfolio.Models",
-        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\obj\\",
+        "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj",
+        "packagesPath": "/Users/badr/.nuget/packages/",
+        "outputPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/badr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,36 +91,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Repository\\Portfolio.Repository.csproj": {
+    "/Users/badr/RiderProjects/Portfolio/Portfolio.Repository/Portfolio.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Repository\\Portfolio.Repository.csproj",
+        "projectUniqueName": "/Users/badr/RiderProjects/Portfolio/Portfolio.Repository/Portfolio.Repository.csproj",
         "projectName": "Portfolio.Repository",
-        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Repository\\Portfolio.Repository.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Repository\\obj\\",
+        "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Repository/Portfolio.Repository.csproj",
+        "packagesPath": "/Users/badr/.nuget/packages/",
+        "outputPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/badr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj"
+              "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj": {
+                "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj"
               }
             }
           }
@@ -190,39 +186,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\Portfolio.Service.csproj": {
+    "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\Portfolio.Service.csproj",
+        "projectUniqueName": "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj",
         "projectName": "Portfolio.Service",
-        "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\Portfolio.Service.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\obj\\",
+        "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj",
+        "packagesPath": "/Users/badr/.nuget/packages/",
+        "outputPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/badr/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj"
+              "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj": {
+                "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj"
               },
-              "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Repository\\Portfolio.Repository.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Repository\\Portfolio.Repository.csproj"
+              "/Users/badr/RiderProjects/Portfolio/Portfolio.Repository/Portfolio.Repository.csproj": {
+                "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Repository/Portfolio.Repository.csproj"
               }
             }
           }
@@ -290,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

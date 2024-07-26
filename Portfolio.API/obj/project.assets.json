@@ -3295,40 +3295,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "/Users/badr/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.API\\Portfolio.API.csproj",
+      "projectUniqueName": "/Users/badr/RiderProjects/Portfolio/Portfolio.API/Portfolio.API.csproj",
       "projectName": "Portfolio.API",
-      "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.API\\Portfolio.API.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.API\\obj\\",
+      "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.API/Portfolio.API.csproj",
+      "packagesPath": "/Users/badr/.nuget/packages/",
+      "outputPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/badr/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Models\\Portfolio.Models.csproj"
+            "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj": {
+              "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj"
             },
-            "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\Portfolio.Service.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Portfolio.Service\\Portfolio.Service.csproj"
+            "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj": {
+              "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj"
             },
-            "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\RiderProjects\\Portfolio\\Shared\\Shared.csproj"
+            "/Users/badr/RiderProjects/Portfolio/Shared/Shared.csproj": {
+              "projectPath": "/Users/badr/RiderProjects/Portfolio/Shared/Shared.csproj"
             }
           }
         }
@@ -3407,7 +3405,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

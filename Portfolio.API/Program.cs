@@ -1,5 +1,8 @@
+using System.Text;
 using EasyNetQ;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Portfolio.Repository.DbContext;
 using Portfolio.Repository.Interfaces;
 using Portfolio.Repository.Repositories;
@@ -19,13 +22,18 @@ builder.Services.AddSingleton(bus);
 
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
-builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
-{
-    options.Authority = "your_authority_url";
-    options.RequireHttpsMetadata = false;
-    options.Audience = "your_audience";
-});
-
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"])),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 var app = builder.Build();
 DbMgmt.MigrationInit(app);
 // Configure the HTTP request pipeline.
