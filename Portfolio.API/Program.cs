@@ -1,8 +1,10 @@
+using System.Collections.Frozen;
 using System.Text;
 using EasyNetQ;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Portfolio.Models.Entities;
 using Portfolio.Repository.DbContext;
 using Portfolio.Repository.Interfaces;
 using Portfolio.Repository.Repositories;
@@ -60,8 +62,33 @@ bus.PubSub.Subscribe<CreatePortfolioMessage>("portfoliocreate", async message =>
 
 bus.PubSub.Subscribe<AddInvestmentMessage>("investmentadd", async message =>
 {
-    Console.WriteLine($"Recieved Message: {message}");
-    await portfolioService.AddInvestmentAsync(message.userId, message.projectId, message.amount);
+    Console.WriteLine($"Received Message: {message}");
+    Console.WriteLine(message.userId + " " + message.projectId + " " + message.amount);
+
+    try
+    {
+        var userPortfolio = await portfolioService.GetPortfolioByUserIdAsync(message.userId);
+        if (userPortfolio == null || !userPortfolio.Any())
+        {
+            Console.WriteLine("User portfolio not found or empty.");
+            return;
+        }
+        Console.WriteLine("Hello from EasyNet");
+
+        var userPortfolioItem = userPortfolio.FirstOrDefault(up => up.UserId == message.userId);
+        if (userPortfolioItem == null)
+        {
+            Console.WriteLine("No matching user portfolio item found.");
+            return;
+        }
+
+        await portfolioService.AddInvestmentAsync(message.userId, message.projectId, message.amount, userPortfolioItem);
+        Console.WriteLine("HELP ME HELP ME HELP ME");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Exception in subscription handler: {ex.Message}");
+    }
 });
 
 app.Run();

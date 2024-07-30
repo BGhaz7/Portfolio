@@ -33,7 +33,7 @@ namespace Portfolio.Services.Services
             await _portfolioRepository.CreatePortfolioAsync(portfolio);
         }
 
-        public async Task AddInvestmentAsync(int userId, Guid projectId, decimal amount)
+        public async Task AddInvestmentAsync(int userId, Guid projectId, decimal amount, UserPortfolio userPortfolio)
         {
             var investment = new Investment
             {
@@ -41,7 +41,18 @@ namespace Portfolio.Services.Services
                 ProjectId = projectId,
                 Amount = amount
             };
-            await _portfolioRepository.AddInvestmentAsync(investment);
+            Console.WriteLine("Hello from Service");
+            Console.WriteLine($"Investment: {investment}, UserPortfolio: {userPortfolio}");
+
+            try
+            {
+                await _portfolioRepository.AddInvestmentAsync(investment, userPortfolio);
+                Console.WriteLine("Investment added successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception in service method: {ex.Message}");
+            }
         }
     }
 }

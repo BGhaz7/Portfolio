@@ -7,6 +7,6 @@ namespace Portfolio.Repository.Interfaces
         Task<IEnumerable<UserPortfolio>> GetPortfolioByUserIdAsync(int userId);
         Task<UserPortfolio> GetProjectDetailsAsync(int userId, Guid projectId);
         Task CreatePortfolioAsync(UserPortfolio portfolio);
-        Task AddInvestmentAsync(Investment investment);
+        Task AddInvestmentAsync(Investment investment, UserPortfolio userPortfolio);
     }
 }

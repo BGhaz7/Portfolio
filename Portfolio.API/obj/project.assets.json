@@ -3295,19 +3295,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/badr/.nuget/packages/": {}
+    "/Users/badrghazwani/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/badr/RiderProjects/Portfolio/Portfolio.API/Portfolio.API.csproj",
+      "projectUniqueName": "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.API/Portfolio.API.csproj",
       "projectName": "Portfolio.API",
-      "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.API/Portfolio.API.csproj",
-      "packagesPath": "/Users/badr/.nuget/packages/",
-      "outputPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.API/obj/",
+      "projectPath": "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.API/Portfolio.API.csproj",
+      "packagesPath": "/Users/badrghazwani/.nuget/packages/",
+      "outputPath": "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/badr/.nuget/NuGet/NuGet.Config"
+        "/Users/badrghazwani/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3319,14 +3319,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj": {
-              "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj"
+            "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj": {
+              "projectPath": "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.Models/Portfolio.Models.csproj"
             },
-            "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj": {
-              "projectPath": "/Users/badr/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj"
+            "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj": {
+              "projectPath": "/Users/badrghazwani/RiderProjects/Portfolio/Portfolio.Service/Portfolio.Service.csproj"
             },
-            "/Users/badr/RiderProjects/Portfolio/Shared/Shared.csproj": {
-              "projectPath": "/Users/badr/RiderProjects/Portfolio/Shared/Shared.csproj"
+            "/Users/badrghazwani/RiderProjects/Portfolio/Shared/Shared.csproj": {
+              "projectPath": "/Users/badrghazwani/RiderProjects/Portfolio/Shared/Shared.csproj"
             }
           }
         }
@@ -3405,7 +3405,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

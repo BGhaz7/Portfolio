@@ -17,10 +17,12 @@ namespace Portfolio.Repository.Repositories
 
         public async Task<IEnumerable<UserPortfolio>> GetPortfolioByUserIdAsync(int userId)
         {
-            return await _context.Portfolios
+            var portfolios =  await _context.Portfolios
                 .Include(p => p.Investments)
                 .Where(p => p.UserId == userId)
                 .ToListAsync();
+            Console.WriteLine($"Retrieved {portfolios.Count} portfolios for user ID {userId}");
+            return portfolios;
         }
 
         public async Task<UserPortfolio> GetProjectDetailsAsync(int userId, Guid projectId)
@@ -36,10 +38,21 @@ namespace Portfolio.Repository.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task AddInvestmentAsync(Investment investment)
+        public async Task AddInvestmentAsync(Investment investment, UserPortfolio userPortfolio)
         {
-            await _context.Investments.AddAsync(investment);
-            await _context.SaveChangesAsync();
+            investment.UserPortfolio = userPortfolio;
+            Console.WriteLine($"Adding investment to user portfolio: {userPortfolio.Id}");
+    
+            try
+            {
+                await _context.Investments.AddAsync(investment);
+                await _context.SaveChangesAsync();
+                Console.WriteLine("Investment saved to database successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception in repository method: {ex.Message}");
+            }
         }
     }
 }
